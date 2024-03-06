@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!--
+meta 元素一般用于提供网站的信息，方便网站（搜索、分享）提取相关的信息。
+-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Kewei">
+    <meta name="description"
+          content="this is a simple web">
+
+    <title>expanding cards</title>
+    <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png" type="image/x-icon">
+    <link rel="stylesheet" href="cssfile.css">
+    <script src="js-file.js" defer></script>
+    <!--    defer 表示加载html完成之后再加载js-->
+</head>
+<body>
+<!--斜体标签-->
+<em> text file. </em>
+<p> my cat is <strong>very</strong> grumpy.</p>
+
+<!--
+元素分为块级元素和内联元素
+块级元素的内容会已新的一行出现。
+而内联元素不会导致文本换行。
+-->
+<em>one</em><em>two</em><em>three</em>
+
+<p>four</p>
+<p>five</p>
+<p>six</p>
+
+<!--
+空元素是只有一个标签，用于插入或者嵌入一些东西。
+-->
+<img src="../demo1/dog.jpeg" alt="dog">
+
+<!--
+元素可以有属性。属性之间用空格分隔，属性名称后面跟着一个等于号，一个属性值由一个引号引起来。
+-->
+<p class="editor-note">this is a p tag</p>
+
+
+<a href="https://google.com" title="google search" target="_blank">goto google</a>
+<br>
+<a href="https://google.com" target="_blank">
+    <img src="../demo1/dog.jpeg" alt="dog">
+</a>
+<br>
+<label>
+    <input type="text" disabled="disabled" />
+    <input type="text" />
+</label>
+<p>Japanese example: ご飯が熱い。</p>
+
+</body>
+</html>

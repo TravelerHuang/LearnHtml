@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+<p>
+    this is a
+    <a href="https://google.com" target="_blank">google</a>
+    link.
+</p>
+
+<!--块级链接-->
+<a href="https://developer.mozilla.org/zh-CN/" target="_blank">
+    <h1>MDN Web 文档</h1>
+</a>
+
+<!--图片链接-->
+<a href="https://developer.mozilla.org/zh-CN/" target="_blank">
+    <img src="../../day1/demo1/dog.jpeg" alt="dog">
+</a>
+
+<p>
+    指向
+    <a href="https://www.mozilla.org/zh-CN/"
+    target="_blank"
+    title="了解Mozilla">Mozilla 主页</a>
+    的超链接
+</p>
+
+<!--文档片段-->
+
+<p>
+    跳转到
+    <a href="#test">文档片段</a>
+</p>
+
+<p id="test">this is a p tag</p>
+
+<!--
+一般访问下面两个链接，访问到的内容是相同的
+https://www.example.com/projects/index.html
+https://www.example.com/projects/
+
+最佳实践
+1. 不要把url放到链接文本。
+2. 不要说链接或者连接到
+3. 保持链接标签尽量短
+4. 减少相同文本链接到不同地方的情况
+
+-->
+
+<!--
+
+跳转到pdf或者流媒体时，给出对应的提示信息
+-->
+<p>
+    <a href="https://www.example.com/large-report.pdf">
+        下载销售报告（PDF，大小为 10 MB）
+    </a>
+</p>
+
+<p>
+    <a href="https://www.example.com/video-stream/" target="_blank">
+        观看视频（将在新标签页中播放，HD 画质）
+    </a>
+</p>
+
+<!--下载链接时，使用download属性-->
+<a
+        href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN"
+        download="firefox-latest-64bit-installer.exe">
+    下载最新的 Firefox 中文版 - Windows（64 位）
+</a>
+
+<!--
+电子邮件链接
+只有mailto 可用分享链接
+-->
+<br>
+<br>
+<a href="mailto:nowhere@gmail.com">发邮件</a>
+
+<br>
+<br>
+
+<!--mailto 中可以指定主题，抄送，主体等详细信息。
+注意每一个字段需要进行url编码
+
+例子：
+mailto:
+mailto:nowhere@mozilla.org
+mailto:nowhere@mozilla.org,nobody@mozilla.org
+mailto:nowhere@mozilla.org?cc=nobody@mozilla.org
+mailto:nowhere@mozilla.org?cc=nobody@mozilla.org&subject=This%20is%20the%20subject
+-->
+<p>
+    <a
+            href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+        发送含有 cc、bcc、主题和主体的邮件
+    </a>
+</p>
+
+
+
+</body>
+</html>

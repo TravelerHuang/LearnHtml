@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VideoAndAudio</title>
+</head>
+<body>
+<h1>Below is a simple video example</h1>
+<!--<video src="video/rabbit320.webm" controls>-->
+<!--    <p>-->
+<!--        你的浏览器不支持，可点击<a href="video/rabbit320.mp4">此链接</a>观看-->
+<!--    </p>-->
+<!--</video>-->
+
+<!--
+video 中不指定视频
+在source中指定，浏览器会自动选择第一个可以播放的视频源，
+type可以帮助浏览器检查这个视频是否可以被解码，
+不然浏览器会尝试解码每一段视频，消耗大量时间。
+
+-->
+
+<!--<video controls>-->
+<!--    <source src="video/rabbit320.mp4" type="video/mp4" />-->
+<!--    <source src="video/rabbit320.webm" type="video/webm" />-->
+<!--    <p>-->
+<!--        你的浏览器不支持，可点击<a href="video/rabbit320.mp4">此链接</a>观看&ndash;&gt;-->
+<!--    </p>-->
+<!--</video>-->
+
+<!--
+
+width 和 height
+    视频会保持长宽比，多余的部分会使用默认颜色填充
+
+autoplay
+    自动播放
+loop
+    循环播放
+muted
+    关闭声音
+poster
+    视频封面
+preload
+    这个属性被用来缓冲较大的文件，有 3 个值可选：
+    "none" ：不缓冲
+    "auto" ：页面加载后缓存媒体文件
+    "metadata" ：仅缓冲文件的元数据
+-->
+
+<video
+        controls
+        width="400"
+        height="400"
+        poster="video/poster.png">
+    <source src="video/rabbit320.mp4" type="video/mp4" />
+    <source src="video/rabbit320.webm" type="video/webm" />
+    <p>
+        你的浏览器不支持 HTML5 视频。可点击<a href="video/rabbit320.mp4">此链接</a>观看
+    </p>
+</video>
+
+
+<audio controls>
+    <source src="video/viper.mp3" type="audio/mp3" />
+    <source src="video/viper.ogg" type="audio/ogg" />
+    <p>
+        你的浏览器不支持 HTML5 音频。可点击<a href="video/viper.mp3">此链接</a>收听
+    </p>
+</audio>
+
+
+<video controls>
+    <source src="" type="">
+    <track src="" kind="subtitles" srclang="en">
+</video>
+
+
+
+</body>
+</html>

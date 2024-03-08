@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iframe</title>
+</head>
+<body>
+
+<!--<h1>Bilibili Video</h1>-->
+<!--<iframe src="//player.bilibili.com/player.html?aid=1501378242&bvid=BV15S421w7RU&cid=1460475664&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
+<!--<iframe-->
+<!--        src="https://developer.mozilla.org/zh-CN/docs/Glossary"-->
+<!--        width="100%"-->
+<!--        height="500"-->
+<!--        frameborder="0"-->
+<!--        allowfullscreen-->
+<!--        sandbox>-->
+<!--    <p>-->
+<!--        <a href="https://developer.mozilla.org/zh-CN/docs/Glossary">-->
+<!--            Fallback link for browsers that don't support iframes-->
+<!--        </a>-->
+<!--    </p>-->
+<!--</iframe>-->
+<!--
+iframe 可以在主站加载完成之后，再使用js设置src来加快网站的加载时间（SEO的重要指标）
+
+iframe 是加载其他网站的内容，有很大的安全隐患，需要注意的点
+只有在必要时嵌入
+    在被证明是安全之前，都假设这是危险的
+使用 HTTPS
+    HTTPS 减少了远程内容在传输过程中被篡改的机会
+    HTTPS 防止嵌入式内容访问你的父文档中的内容，反之亦然
+始终使用 sandbox 属性
+    使用沙箱来执行iframe
+    最好是默认单独使用sandbox,强制执行所有可用的限制
+    永远不应该同时添加 allow-scripts 和 allow-same-origin 到你的 sandbox 属性中
+配置 CSP 指令
+    CSP 代表 内容安全策略，它提供一组 HTTP 标头（由 web 服务器发送时与元数据一起发送的元数据），
+    旨在提高 HTML 文档的安全性。
+-->
+
+
+<!--<embed-->
+<!--        src="whoosh.swf"-->
+<!--        quality="medium"-->
+<!--        bgcolor="#ffffff"-->
+<!--        width="550"-->
+<!--        height="400"-->
+<!--        name="whoosh"-->
+<!--        align="middle"-->
+<!--        allowScriptAccess="sameDomain"-->
+<!--        allowFullScreen="false"-->
+<!--        type="application/x-shockwave-flash"-->
+<!--        pluginspage="http://www.macromedia.com/go/getflashplayer" />-->
+
+<!--<object-->
+<!--        data="mypdf.pdf"-->
+<!--        type="application/pdf"-->
+<!--        width="800"-->
+<!--        height="1200"-->
+<!--        typemustmatch>-->
+<!--    <p>-->
+<!--        You don't have a PDF plugin, but you can-->
+<!--        <a href="myfile.pdf">download the PDF file.</a>-->
+<!--    </p>-->
+<!--</object>-->
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+</head>
+<body>
+<h1>Images in HTML</h1>
+<!--
+img 和video有时候被称之为替换元素。
+因为这样的元素的内容和尺寸由外部资源（像是一个图片或视频文件）所定义，而不是元素自身。
+-->
+<img src="images/dinosaur.png" alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth">
+
+<!--
+alt表示备选文本，当图片解析错误时，显示的内容。
+alt的作用就是，当图片无法被看见时，也提供相关的内容可供解读。
+
+-->
+<img src="images/dinosaur00.png" alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth">
+
+<!--
+宽度和高度
+图片尽量使用默认的高度和宽度，在图片编辑器中先修改好对应的尺寸，再放到HTML中来。
+-->
+<img src="images/dinosaur.png" alt="一只恐龙骨架"
+width="312"
+height="249">
+
+<!--图片标题
+-->
+<img
+    src="images/dinosaur.png"
+    alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+    width="400"
+    height="341"
+    title="A T-Rex on display in the Manchester University Museum" />
+
+<!--
+test
+-->
+
+<img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+     alt="这是一个恐龙骨架"
+width="200"
+height="171"
+title="恐龙骨架">
+
+<!--
+figure
+不一定是包围图片元素，也可以是一段代码，音视频，方程，表格或者别的。
+    用简洁、易懂的方式表达意图。
+    可以置于页面线性流的某处。
+    为主要内容提供重要的补充说明。
+-->
+
+<figure>
+    <img src="images/dinosaur.png" alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。">
+    <figcaption>曼彻斯特大学博物馆展出的一只霸王龙的化石</figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+         alt="这是一个恐龙骨架">
+    <figcaption>恐龙骨架</figcaption>
+</figure>
+
+
+<!--
+可以使用css插入图片
+
+这和html添加图片不一样，css的图片只是装饰作用，而html的图片对内容有意义。
+p {
+  background-image: url("images/dinosaur.png");
+}
+
+-->
+
+</body>
+</html>
